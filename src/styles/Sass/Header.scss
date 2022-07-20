@@ -21,17 +21,19 @@
 }
 .listasUl li{
     list-style: none;
+
+    &:first-child{
+        padding-right: 3rem;
+    }
 }
 
-.listasUl li:first-child{
-    padding-right: 3rem;
-}
 .listasUl li a{
     padding:0.5rem;
     color:var(--white);
     text-decoration:none;
     transition:0.5s;
-}
-.listasUl li a:hover{
-    color:var(--yellow-500);
+
+    &:hover{
+        color:var(--yellow-500);
+    }
 }

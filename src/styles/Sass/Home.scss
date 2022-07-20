@@ -1,17 +1,20 @@
 .divHello{
-    padding: 11.5rem 0rem 0rem 0rem;
     width:100%;
+
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
+
+    padding: 11.5rem 0rem 0rem 0rem;
 }
 
 .me{
     display:flex;
     flex-direction:column;
     justify-content:left;
-     h1{     
+
+    h1{     
         padding-top:1rem;
         font-size:3rem;
     }
@@ -30,21 +33,20 @@
 }
 
 .about{
-    padding-top:5.3rem;
-    padding-left:2rem;
     width:30rem;
-}
+    padding-top:5.3rem;
 
-.about p {
-    padding-top:2rem;
-    display:flex;
-    flex-wrap: wrap;
-    font-size: 1.3rem;
-}
+    p{
+        padding-top:2rem;
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+    }
 
-.about h1 {
-    font-size:1.5rem;
-    color:var(--yellow-500);
+    h1{
+        font-size:1.5rem;
+        color:var(--yellow-500);
+    }
 }
 
 .links{
@@ -56,4 +58,5 @@
     height:1px;
     margin: 4rem;
     background-color:var(--gray-300);
+    filter:blur(1px);
 }
