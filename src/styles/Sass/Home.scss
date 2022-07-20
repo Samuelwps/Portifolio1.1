@@ -1,0 +1,59 @@
+.divHello{
+    padding-top: 11.5rem;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+
+}
+
+.me{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+     h1{
+        padding-top:1rem;
+        font-size:5rem;
+    }
+
+    p{
+        padding-top:1rem;
+        color:var(--yellow-500);
+        font-size:2.5rem;
+    }
+}
+
+.icons{
+    width:3rem;
+    height:3rem;
+    margin-right:1rem;
+}
+
+.about{
+    padding-top:2rem;
+    padding-left:2rem;
+    width:30rem;
+}
+
+.about p {
+    padding-top:1rem;
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+.about h1 {
+    color:var(--yellow-500);
+}
+
+.links{
+    padding-top:1rem;
+}
+
+.inline{
+    width:100%;
+    height:1px;
+    margin: 4rem;
+    background-color:var(--gray-300);
+}
