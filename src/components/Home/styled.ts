@@ -35,7 +35,7 @@ export const Me = styled.div`
     }
 
     p{
-        padding:1.5rem;
+        padding:1.5rem 0rem 1.5rem 0rem;
         color:var(--yellow-500);
         font-size:1.5rem;
     }

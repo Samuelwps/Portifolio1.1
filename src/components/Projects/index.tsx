@@ -1,23 +1,56 @@
-import { ListItem } from "./styled"
+import { ListItem, SelectedWorks, SectionWorks, Imgworks, DivWorks } from "./styled"
+import dtmoneyIcon from "./../../images/dtmoneyIcon.svg"
+import watchMe from "./../../images/watchMe.svg"
+import Arrow from "./../../images/chevrons-right.svg"
 
 export function Projects() {
     return(
-        <section>
-            <ListItem>
-                <h2>Selected Works</h2>
-            </ListItem>
-            <ListItem>
-                <h5>01.</h5>
-                <a href="" target="_blank"><h3>Nubank</h3></a>
-                <img src="img/lp-nubank.png" alt=""/>
-            </ListItem>
+        <SectionWorks>
+            <SelectedWorks>
+                <p>PROJECTS</p>
+                <h2>Projetos Concluídos</h2>
+            </SelectedWorks>
+            <div>
+                <ListItem>
+                    <DivWorks>
+                        <div>
+                            <h1>01</h1>
+                            <h4>DT-Money</h4>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. 
+                            Laborum a, eligendi reiciendis
+                        </p>
+                        <div className="Arrow">
+                            <a href=""><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                        </div>    
+                    </DivWorks>
+                    <Imgworks>
+                        <img src={dtmoneyIcon} alt="DT-Money"/>
+                    </Imgworks>
+                </ListItem>
 
-            <ListItem>
-                <h5>02.</h5>
-                <a href="" target="_blank"><h3>FrontPUSH</h3></a>
-                <img src="img/lp-frontpush.png" alt=""/>
-                
-            </ListItem>
-        </section>
+                <ListItem>
+                    <Imgworks>
+                        <img src={watchMe} alt="DT-Money"/>
+                    </Imgworks>
+                    <DivWorks>
+                        <div>    
+                            <h1>02</h1>
+                            <h4>WatchMe</h4>
+                        </div> 
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. 
+                            Laborum a, eligendi reiciendis
+                        </p>
+                        <div className="Arrow">
+                            <a href=""><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                        </div>    
+                    </DivWorks>
+                </ListItem>
+            </div> 
+        </SectionWorks>
     )
 }
