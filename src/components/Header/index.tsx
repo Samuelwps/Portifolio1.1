@@ -1,15 +1,17 @@
+import {Container, Ullist} from "./styled"
+
 
 export function Header(){
     return(
-        <header className="headerContainer">
-            <ul className="listasUl">
+        <Container>
+            <Ullist>
                 <li><a href="home">HOME</a></li>
                 <li><a href="About">ABOUT</a></li>
-            </ul>
-            <ul className="listasUl">
+            </Ullist>
+            <Ullist>
                 <li><a href="Works">WORKS</a></li>
                 <li><a href="Resume">RESUME</a></li>
-            </ul>
-        </header>
+            </Ullist>
+        </Container>
     );
 }
