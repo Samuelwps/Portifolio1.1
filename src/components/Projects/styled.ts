@@ -14,9 +14,6 @@ export const ListItem = styled.div`
         justify-content:space-around;
 
 
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-
         &:first-child{@media screen and (max-width:1080px){
                 flex-direction: column-reverse;
         }}
@@ -26,37 +23,50 @@ export const ListItem = styled.div`
 
 `;
 
-export const SelectedWorks = styled.div`
-        border-right: 1px solid var(--gray-800);
-        padding-right: 6rem;
 
-        @media screen and (max-width:1080px){
-                
-                padding-right:0;
-        }
-
-`;
 
 export const Imgworks = styled.div`
-        width:24rem;
-        height:24rem;
         
 
         img{
-                width:100%;
-                height:100%;
+                max-width:20rem;
+                max-height:20rem;
         }
 `;
 
-export const ProjectsWorks = styled.div`
-        @media screen and (max-width:1080px){
-                transform:rotate(-90deg);
-        }
+export const SelectedWorks = styled.div`
+        border-right: 1px solid var(--gray-800);
 
+        @media screen and (max-width:1080px){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 20rem;
+        }
+        
+
+
+`;
+
+export const ProjectsWorks = styled.div`
+        margin:1rem;
+        display:flex;
+        flex-direction:column;
+
+        @media screen and (max-width:1080px){ 
+                transform: rotate(-90deg) translate3d(-20px,-6px,0);
+                min-width: 30rem;
+
+        }
 
         h2{
                 font-size: 1.8rem;
                 font-weight:400;
+                @media screen and (max-width:1080px){ 
+                        font-size: 3rem;
+                }
+
+                
         }
 
         p{
@@ -106,8 +116,8 @@ export const DivWorks = styled.div`
                         }
 
                         img{
-                                max-width:10rem;
-                                max-height:10rem;
+                                max-width:7rem;
+                                max-height:7rem;
                         }
                 }
         }
