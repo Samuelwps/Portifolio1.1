@@ -9,7 +9,7 @@ export const Container = styled.div`
 
     padding: 6.5rem 0rem 3rem 0rem;
 
-    margin-left:30px;
+    margin-left:2rem;
     margin-right:2rem;
 
     border-bottom: 1px solid var(--gray-800);

@@ -2,17 +2,7 @@ import styled from "styled-components"
 
 
 export const SectionWorks = styled.section`
-        
-        max-width: 1200px;
-        display:flex;
-        margin: 0 auto;
-        justify-content:center;
-        flex-direction:row;
-        justify-content:space-around;
-        
-
-        padding: 6.5rem 0rem 3rem 0rem;
-           
+        margin:2rem;
 `; 
 
 
@@ -23,8 +13,16 @@ export const ListItem = styled.div`
         align-items: center;
         justify-content:space-around;
 
+
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+
+        &:first-child{@media screen and (max-width:1080px){
+                flex-direction: column-reverse;
+        }}
+        @media screen and (max-width:1080px){
+                flex-direction: column;
+        }
 
 `;
 
@@ -32,14 +30,11 @@ export const SelectedWorks = styled.div`
         border-right: 1px solid var(--gray-800);
         padding-right: 6rem;
 
-        h2{
-                font-size: 1.8rem;
-                font-weight:400;
+        @media screen and (max-width:1080px){
+                
+                padding-right:0;
         }
 
-        p{
-                color: var(--gray-100);
-        }
 `;
 
 export const Imgworks = styled.div`
@@ -53,12 +48,29 @@ export const Imgworks = styled.div`
         }
 `;
 
+export const ProjectsWorks = styled.div`
+        @media screen and (max-width:1080px){
+                transform:rotate(-90deg);
+        }
+
+
+        h2{
+                font-size: 1.8rem;
+                font-weight:400;
+        }
+
+        p{
+                color: var(--gray-100);
+        }
+`;
+
 export const DivWorks = styled.div`
         max-width:20rem;
         display:flex;
         flex-direction:column;
         margin:3rem;
         font-size:1.5rem;
+
         div{
                 display:flex;
                 justify-content:center;
@@ -92,6 +104,23 @@ export const DivWorks = styled.div`
                         &:hover{
                                 transform: scale(1.1);
                         }
+
+                        img{
+                                max-width:10rem;
+                                max-height:10rem;
+                        }
                 }
         }
+`;
+
+export const DivForWorks = styled.div`
+        max-width: 1200px;
+        display:flex;
+        margin: 0 auto;
+        justify-content:center;
+        padding:2rem;
+        flex-direction:row;
+        justify-content:space-around;
+        
+        padding: 6.5rem 0rem 3rem 0rem;
 `;
