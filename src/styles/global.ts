@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle`
     :root{
         --white: #FFFFFF;
+        --white-100:#35353562;
 
         --gray-100: #a8a8b3;
         --gray-300: #949494;
@@ -29,6 +30,22 @@ export const GlobalStyle = createGlobalStyle`
         color:white;
 
         background:#0D0D0D;
+
+        &::-webkit-scrollbar{
+        padding-right: 4px;
+        width: 0.3rem;
+        background: transparent;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;        /* color of the tracking area */
+        }
+
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background: var(--white-100);
+            border: 6px solid var(--white-100);
+        }
     }
 
 
@@ -61,4 +78,6 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 64.5%;
         }
     }
+
+    
 `;

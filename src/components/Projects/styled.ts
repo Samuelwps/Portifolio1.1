@@ -29,19 +29,21 @@ export const Imgworks = styled.div`
         
 
         img{
-                max-width:20rem;
-                max-height:20rem;
+                max-width:15rem;
+                max-height:15rem;
         }
 `;
 
 export const SelectedWorks = styled.div`
+        
         border-right: 1px solid var(--gray-800);
+        padding:5rem;
 
         @media screen and (max-width:1080px){
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                max-width: 20rem;
+                max-width: 1rem;
         }
         
 
@@ -49,21 +51,27 @@ export const SelectedWorks = styled.div`
 `;
 
 export const ProjectsWorks = styled.div`
-        margin:1rem;
-        display:flex;
-        flex-direction:column;
-
         @media screen and (max-width:1080px){ 
                 transform: rotate(-90deg) translate3d(-20px,-6px,0);
-                min-width: 30rem;
+                min-width: 18rem;
+        }
+        @media screen and (max-width:940px){
+                min-width: 20rem;
+
+        }
+        @media screen and (max-width:535px){
+                min-width: 20rem;
 
         }
 
-        h2{
+        ::after h2{
                 font-size: 1.8rem;
                 font-weight:400;
                 @media screen and (max-width:1080px){ 
                         font-size: 3rem;
+                }
+                @media screen and (max-width:940px){ 
+                        font-size: 2rem;
                 }
 
                 
@@ -79,7 +87,7 @@ export const DivWorks = styled.div`
         display:flex;
         flex-direction:column;
         margin:3rem;
-        font-size:1.5rem;
+        font-size:1rem;
 
         div{
                 display:flex;
@@ -108,6 +116,7 @@ export const DivWorks = styled.div`
                         display:flex;
                         justify-items:center;
                         align-items:center;
+                        text-align: center;
                         color:var(--yellow-500);
                         text-decoration:none;
                         transition:0.5s;
@@ -116,8 +125,8 @@ export const DivWorks = styled.div`
                         }
 
                         img{
-                                max-width:7rem;
-                                max-height:7rem;
+                                max-width:3.5rem;
+                                max-height:3.5rem;
                         }
                 }
         }
