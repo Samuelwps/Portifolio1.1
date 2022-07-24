@@ -42,10 +42,21 @@ export const Me = styled.div`
 `;
 export const Links = styled.div`
     padding-top:2rem;
+
+    a{
+        text-decoration:none;
+        color:white;
+    }
     .icons{
         width:3rem;
         height:3rem;
         margin-right:1rem;
+        cursor:pointer;
+        transition:0.5s;
+
+        &:hover{
+            filter: drop-shadow(0px 0px 5px #E9AB2F);
+        }
     }
 `;
 

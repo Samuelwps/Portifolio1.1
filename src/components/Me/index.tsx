@@ -11,15 +11,16 @@ export function AboutMe() {
           <h1>SAMUEL RIBEIRO</h1>
           <p>FRONT-END | DEVELOPER</p>
           <Links>
-            <AiOutlineLinkedin className="icons"/>
-            <FaGithub className="icons"/>
+            <a href="https://www.linkedin.com/in/samuel-r-228093232"><AiOutlineLinkedin className="icons"/></a>
+            <a href="https://www.github.com/Samuelwps"><FaGithub className="icons"/></a>
           </Links>
       </Me>    
       <About>
         <h1>About me</h1>
         <p>Eu sou um desenvolvedor Front-End. 
           Com o objetivo de ser Full Stack, 
-          atualmete focado em Next.js
+          atualmete Desenvolvo aplicações web e mobile
+          desde o layout até o código.
         </p>
       </About>         
     </Container>
