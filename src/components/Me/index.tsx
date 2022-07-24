@@ -3,7 +3,7 @@ import { Container, Me, Links, About } from "./styled"
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import { FaGithub } from 'react-icons/fa'
 
-export function Home() {
+export function AboutMe() {
   return (
     <Container> 
       <Me>

@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { Header } from './components/Header';
-import { Home } from "./components/Home"
-import { Projects } from "./components/Projects"
 import { GlobalStyle } from "./styles/global";
+import Rout from './routes';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
     <>
     <Header/>
-    <Home/>
-    <Projects/>
+    <Rout/>
+    <Footer/>
     <GlobalStyle/>
     </>
   );
