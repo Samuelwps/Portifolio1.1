@@ -1,13 +1,12 @@
-// import { ListItem, SelectedWorks, SectionWorks, Imgworks, DivWorks, DivForWorks, ProjectsWorks } from "./styled"
-import dtmoneyIcon from "./../../images/dtmoneyIcon.svg"
 
-import { Project, SectionWorks, DivWorks, DivContent, DivTitle, Title, DivImage, Ullist } from "./styled"
+import { Project, SectionWorks, DivWorks, DivContent, DivTitle, Title, DivImage } from "./styled"
 
-import Arrow from "./../../images/arrow.svg"
+import dtmoneyimage from "./../../images/dtmoneyimage.png"
 
 
 export function Projects() {
     return(
+        <>
         <SectionWorks>
             <Project>
                 <DivWorks>
@@ -26,15 +25,15 @@ export function Projects() {
                             Laborum a, eligendi reiciendis
                         </p>
 
-                        <Ullist>
-                            <li><a><img src={Arrow} alt="arrow"/></a></li>
-                            <li><a><img src={Arrow} className="second"alt="arrow"/></a></li>
-                        </Ullist>
+                        
                     </DivTitle>
 
-                    <DivImage></DivImage>
+                    <DivImage>
+                        <img src={dtmoneyimage} alt="dtmoneyimage" />
+                    </DivImage>
                 </DivContent>
             </Project>
         </SectionWorks>
+        </>
     )
 }

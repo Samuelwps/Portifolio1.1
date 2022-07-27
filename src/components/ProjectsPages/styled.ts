@@ -98,11 +98,15 @@ export const Ullist = styled.ul`
 
 
 export const DivImage = styled.div`
-        display: flex;
-        width:40rem;
-        height:40rem;
-        border-radius: 8px;
+        max-width:45rem;
+        max-height:45rem;
         background:var(--background);
+
+        img{
+                width:100%;
+                height:100%;
+        }
+        
 `
 
 export const Project = styled.div`

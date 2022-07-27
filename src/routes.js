@@ -7,6 +7,7 @@ import {
 
 import { Home } from  "./pages/Home"
 import { About } from  "./pages/About"
+import { DtMoney } from  "./pages/DtMoney"
 
 
 const Rout = () => {
@@ -17,6 +18,8 @@ const Rout = () => {
         <Route path="/home" element={<Home />} />
 
         <Route path="/About" element={<About />} />
+
+        <Route path="/DtMoney" element={<DtMoney />} />
       </Routes>
     </BrowserRouter>
     )
