@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export const SectionWorks = styled.section`
         padding-top: 5rem;
+        margin:0 auto;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -108,7 +109,6 @@ export const DivImage = styled.div`
                 width:100%;
                 height:100%;
         }
-        
 `
 
 export const ProjectHeader = styled.div`    
@@ -118,10 +118,18 @@ export const ProjectHeader = styled.div`
 `;
 
 
-export const ProjectContent = styled.div`
-        padding-top:4rem;
 
-        margin:1.5rem;
+
+
+
+
+
+
+
+
+export const ProjectContent = styled.div`
+
+        margin:0 auto;
 
         display: flex;
         align-items:center;
@@ -133,8 +141,9 @@ export const ProjectContent = styled.div`
                 text-align: left;
                 font-size:1.5rem;
         }
-
+        max-width:75rem;
         div{
+                margin:1rem;
         p{
                 text-align: center;
                 font-size:1.2rem;
@@ -153,17 +162,32 @@ export const DivImageSummary = styled.div`
 `
 
 
-export const DivSummaryCategory = styled.div`
-        display: flex;
-        flex-direction: column;
-        max-width:70rem;
-        max-height:70rem;
-        margin:3rem;
+// export const DivSummaryCategory = styled.div`
+//         display: flex;
+//         flex-direction: column;
+//         max-width:70rem;
+//         max-height:70rem;
+
+
+
+// `
+
+
+export const DivSummaryHeader = styled.div`
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        p{
+                text-align:center;
+        }
 `
 
-export const DivSummaryCategoryDual = styled.div`
+
+export const DivSummaryCategory = styled.div`
         display:flex;
-        width:100%;
+        align-items:center;
+        justify-content:center;
         height:100%;
         div{
                 margin:1rem;
@@ -177,11 +201,33 @@ export const DivSummaryCategoryDual = styled.div`
 
 export const DivImageSummaryCategory = styled.div`
 
-        max-width:35rem;
-        max-height:35rem;
+        max-width:75rem;
+        max-height:55rem;
 
         img{
                 width:100%;
                 height:100%;
+        }
+`
+
+export const ButtonGit = styled.a`
+        width:18rem;
+
+        text-decoration:none;
+
+        margin:2rem;
+
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background: var(--gitcolor);
+        padding:1.3rem;
+        border-radius:15px;
+        border:none;
+        color:white;
+        font-size:1.5rem;
+
+        p{
+                font-weight:300;
         }
 `
