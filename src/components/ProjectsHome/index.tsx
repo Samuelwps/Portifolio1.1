@@ -1,11 +1,11 @@
-import { ListItem, SelectedWorks, SectionWorks, Imgworks, DivWorks, DivForWorks, ProjectsWorks } from "./styled"
+import { ListItem, SelectedWorks, Container, Imgworks, DivWorks, DivForWorks, ProjectsWorks } from "./styled"
 import dtmoneyIcon from "./../../images/dtmoneyIcon.svg"
 import watchMe from "./../../images/watchMe.svg"
 import Arrow from "./../../images/chevrons-right.svg"
 
 export function Projects() {
     return(
-        <SectionWorks>
+        <Container>
             <DivForWorks>
                 <SelectedWorks>
                     <ProjectsWorks>
@@ -21,9 +21,9 @@ export function Projects() {
                                 <h4>DT-Money</h4>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet 
-                                consectetur adipisicing elit. 
-                                Laborum a, eligendi reiciendis
+                                Um dos meus primeiros projetos 
+                                 como treinamento em desenvolvimento
+                                Front-End com rocketseat-education
                             </p>
                             <div className="Arrow">
                                 <a href="/DtMoney"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
@@ -44,9 +44,7 @@ export function Projects() {
                                 <h4>WatchMe</h4>
                             </div> 
                             <p>
-                                Lorem ipsum dolor sit amet 
-                                consectetur adipisicing elit. 
-                                Laborum a, eligendi reiciendis
+                                Projetos como meu treinamento em desenvolvimento Front-End com rocketseat-education
                             </p>
                             <div className="Arrow">
                                 <a href="/WatchMe"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
@@ -55,6 +53,6 @@ export function Projects() {
                     </ListItem>
                 </div> 
             </DivForWorks>
-        </SectionWorks>
+        </Container>
     )
 }

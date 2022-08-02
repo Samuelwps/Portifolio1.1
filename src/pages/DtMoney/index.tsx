@@ -50,8 +50,8 @@ export function DtMoney() {
                         <img src={dtmoneyCategory} alt="dtmoneyimage" />
                     </DivImageSummaryCategory>
                     <div>
-                        <p>Se é feito uma ação do tipo deposit, esse valor é adicionado nessa categoria e no total.</p>
-                        <p>O mesmo acontece com as ações do tipo withdraw, ela é somada a categoria de saída mas diferente da anterior ela é “descontada”do total.</p>
+                        <p className="space">Se é feito uma ação do tipo deposit, esse valor é adicionado nessa categoria e no total.</p>
+                        <p className="space">O mesmo acontece com as ações do tipo withdraw, ela é somada a categoria de saída mas diferente da anterior ela é “descontada”do total.</p>
                     </div>
                 </DivSummaryCategory>
                 <DivSummaryCategory>

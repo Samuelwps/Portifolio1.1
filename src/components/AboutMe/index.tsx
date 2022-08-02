@@ -16,7 +16,7 @@ export function AboutMe() {
           </Links>
       </Me>    
       <About>
-        <h1>About me</h1>
+        <h1>Expert on</h1>
         <p>Eu sou um desenvolvedor Front-End. 
           Com o objetivo de ser Full Stack, 
           atualmete Desenvolvo aplicações web e mobile

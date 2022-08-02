@@ -1,18 +1,13 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
+    max-width: 1440px;
     margin: 0 auto;
-
     display:flex;
     flex-direction:row;
     justify-content:space-around;
 
-    padding: 6.5rem 0rem 3rem 0rem;
-
-    margin-left:2rem;
-    margin-right:2rem;
-
-    border-bottom: 1px solid var(--gray-800);
+    padding: 6.5rem 0rem 0rem 0rem;
 
     @media screen and (max-width:940px){
         flex-direction:column;
@@ -40,6 +35,7 @@ export const Me = styled.div`
         font-size:1.5rem;
     }
 `;
+
 export const Links = styled.div`
     padding-top:2rem;
 

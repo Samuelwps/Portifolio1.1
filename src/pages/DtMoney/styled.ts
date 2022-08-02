@@ -10,17 +10,6 @@ export const SectionWorks = styled.section`
         flex-direction:column;
 `; 
 
-export const DivWorks = styled.div`
-        display: flex;
-        flex-direction:column;
-        align-items: flex-start;
-
-        p{
-                color:var(--gray-300);
-        }
-
-`
-
 export const DivContent = styled.div`
         display:flex;;
         align-items:center;
@@ -54,8 +43,6 @@ export const Title = styled.div`
         flex-direction:row;
         align-items:center;
         justify-content:center;
-
-
 
         div{
                 background: var(--yellow-500);
@@ -117,16 +104,6 @@ export const ProjectHeader = styled.div`
         flex-direction:column;
 `;
 
-
-
-
-
-
-
-
-
-
-
 export const ProjectContent = styled.div`
 
         margin:0 auto;
@@ -161,18 +138,6 @@ export const DivImageSummary = styled.div`
         }
 `
 
-
-// export const DivSummaryCategory = styled.div`
-//         display: flex;
-//         flex-direction: column;
-//         max-width:70rem;
-//         max-height:70rem;
-
-
-
-// `
-
-
 export const DivSummaryHeader = styled.div`
         display:flex;
         flex-direction:column;
@@ -191,18 +156,25 @@ export const DivSummaryCategory = styled.div`
         height:100%;
         div{
                 margin:1rem;
+                height:100%;
                 display:flex;
                 flex-direction: column;
                 justify-content: space-around;
+
                 p{
-                text-align: left;}
+                        text-align: center;
+                }
+
+                .space{
+                        text-align:left;
+                }
         }
 `
 
 export const DivImageSummaryCategory = styled.div`
 
         max-width:75rem;
-        max-height:55rem;
+        max-height:75rem;
 
         img{
                 width:100%;
