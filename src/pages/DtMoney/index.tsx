@@ -23,9 +23,9 @@ export function DtMoney() {
                             <h4>DT-Money</h4>
                         </Title>
                         <p>
-                            Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Laborum a, eligendi reiciendis
+                            Um dos meus primeiros projetos 
+                            como treinamento em desenvolvimento
+                            Front-End com rocketseat-education
                         </p>
                     </DivTitle>
 

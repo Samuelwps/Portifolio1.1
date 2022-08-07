@@ -22,7 +22,7 @@ export function Projects() {
                             </div>
                             <p>
                                 Um dos meus primeiros projetos 
-                                 como treinamento em desenvolvimento
+                                como treinamento em desenvolvimento
                                 Front-End com rocketseat-education
                             </p>
                             <div className="Arrow">
