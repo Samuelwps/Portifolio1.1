@@ -1,5 +1,10 @@
 
-import { ButtonGit, DivSummaryHeader, DivSummaryCategory, DivImageSummaryCategory, ProjectHeader, SectionWorks, DivImageSummary, DivContent, DivTitle, Title, DivImage, ProjectContent } from "./styled"
+import { 
+    ButtonGit, DivSummaryHeader, DivSummaryCategory,
+    DivImageSummaryCategory, ProjectHeader, SectionWorks,
+    DivImageSummary, DivContent, DivTitle,
+    Title, DivImage, ProjectContent
+ } from "./styled"
 
 import dtmoneyimage from "./../../images/pageDT-Money/dtmoneyimage.png"
 import dtmoneySummary from "./../../images/pageDT-Money/dtmoneySummary.png"

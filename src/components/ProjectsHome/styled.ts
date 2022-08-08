@@ -63,7 +63,7 @@ export const ListItem = styled.div`
         justify-content:space-around;
 
 
-        &:first-child{@media screen and (max-width:1080px){
+        &:first-child{@media screen and (max-width:1180px){
                 flex-direction: column-reverse;
         }}
         @media screen and (max-width:1180px){

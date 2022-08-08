@@ -6,19 +6,18 @@ export const fauna = new Client({
 
 import { query as q } from "faunadb"
 
-export async function Feste(InputValue: string, setInputValue:React.Dispatch<React.SetStateAction<string>>){
-        try{
-          console.log(process.env.REACT_APP_FAUNA_KEY)
-          await fauna.query(
+export async function Feste(contact: string, setInputValue:React.Dispatch<React.SetStateAction<string>>){
+      try{
+        console.log(process.env.REACT_APP_FAUNA_KEY)
+        await fauna.query(
           q.Create(
             q.Collection("contact"),
-            {data : {InputValue}}
+            {data : {contact}}
           )
         )
         setInputValue("")
-
-          window.alert("certo")
+        return true
       } catch {
-        window.alert("errado") 
+        return false 
       }
     }

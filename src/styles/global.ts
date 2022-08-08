@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components"
+import myImage from "../images/pageDT-Money/Group.png"
+
 
 export const GlobalStyle = createGlobalStyle`
     :root{
@@ -33,7 +35,16 @@ export const GlobalStyle = createGlobalStyle`
 
         color:white;
 
-        background:#0D0D0D;
+        background-color:var(--gray-900);
+
+        /* background-position: center;
+
+        background-size: cover;
+
+        background-repeat: no-repeat;
+
+        background-image: url(${myImage}); */
+       
 
         &::-webkit-scrollbar{
         padding-right: 4px;

@@ -1,14 +1,14 @@
 
 import { AboutMe } from "../../components/AboutMe"
 import { Projects } from "../../components/ProjectsHome"
-import { AboutMeHome } from "../../components/AboutMeHome"
+import { ContactMe } from "../../components/ContactMe"
 
 export function Home() {
   return (
     <>
     <AboutMe/>
     <Projects/>
-    <AboutMeHome/>
+    <ContactMe/>
     </>
   )
 }
