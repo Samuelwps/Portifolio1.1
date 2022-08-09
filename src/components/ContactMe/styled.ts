@@ -4,20 +4,80 @@ export const Container = styled.div`
 
     max-width:1440px;
 
-    display:flex;
-    justify-content:space-around;
+    min-height: 20rem;
 
     margin:0 auto;
 
     padding:2rem;
+
+    border-top: 1px solid var(--gray-800);
 `
+
+export const ContainerMessage = styled.div`
+    max-width: 1040px;
+    
+    margin:0 auto;
+
+    display:flex;
+    justify-content:center;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:2rem;
+`
+
 
 export const Message = styled.div`
-    display:flex;
+    display:flex;   
 `
 
+
+export const MessageData = styled.div`
+    background: rgba(36, 35, 35, 0.3);
+    border-radius: 2px;
+
+
+    min-width:550px;
+
+    min-height:500px;
+
+    padding:1.3rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-around;
+    flex-direction:column;
+    
+    border-radius: 8px;
+
+    input{
+        width:100%;
+        padding:1.7rem;
+
+        border-radius: 5px;
+
+        border:none;
+        background:var(--background);
+    }
+
+    textarea{
+        width:100%;
+        height:10rem;
+
+        padding:1rem;
+
+        border-radius: 5px;
+        border:none;
+        background:var(--background);
+
+        resize:none;
+    }
+`
+
+
 export const TextMessage = styled.div`
-    min-height: 10rem;
+    max-height: 15rem;
 
     display: flex;
     flex-direction: column;

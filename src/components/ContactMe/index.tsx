@@ -1,6 +1,6 @@
 import {
     Container, Message, TextMessage,
-    IniciarProjeto
+    IniciarProjeto, MessageData, ContainerMessage
 
 } from "./styled"
 
@@ -18,29 +18,35 @@ export function ContactMe(){
 
     return( 
         <Container>
+            <ContainerMessage>
+                <TextMessage>
+                    <IniciarProjeto>
+                        <div/>
+                        <h4>Iniciar projeto</h4>
+                    </IniciarProjeto>
 
-            <TextMessage>
-                <IniciarProjeto>
-                    <div/>
-                    <h4>Iniciar projeto</h4>
-                </IniciarProjeto>
-
-                <h1>Vamos começar?</h1>
-                <p>Conte-me sobre seu projeto<br/>Vou responder em breve</p>
-            </TextMessage>
+                    <h1>Vamos começar?</h1>
+                    <p>Conte-me sobre seu projeto<br/>Vou responder em breve</p>
+                </TextMessage>
 
 
-            <Message>
-                <input type="text" value={InputValue}
-                placeholder="Nome"
-                onChange={(e) => setInputValue(e.target.value)}
-                />
-                <input type="text" value={InputValue}
-                placeholder="Email"
-                onChange={(e) => setInputValue(e.target.value)}
-                />
-                <button type="submit" onClick={() => Feste(contact, setInputValue)}>SUBMIT</button>
-            </Message>
+                <Message>
+                    <MessageData>
+                        <input type="text" value={InputValue}
+                        placeholder="Nome"
+                        onChange={(e) => setInputValue(e.target.value)}
+                        />
+                        <input type="text" value={InputValue}
+                        placeholder="Email"
+                        onChange={(e) => setInputValue(e.target.value)}
+                        />
+
+                        <textarea placeholder="Message"/>
+
+                        <button type="submit" onClick={() => Feste(contact, setInputValue)}>SUBMIT</button>
+                    </MessageData>
+                </Message>
+            </ContainerMessage>
         </Container>
     )
 }
