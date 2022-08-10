@@ -144,9 +144,9 @@ export const IniciarProjeto = styled.div`
     justify-content:center;
 
     div{
-        margin-right:1rem;
+        margin-right:0.5rem;
 
-        width:40px;
+        width:2.3rem;
         height:2px;
 
         background: var(--yellow-500);

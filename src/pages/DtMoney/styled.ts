@@ -47,8 +47,8 @@ export const Title = styled.div`
         div{
                 background: var(--yellow-500);
                 width:2.3rem;
-                margin:0.5rem;
-                height:3px;
+                margin-right:0.5rem;
+                height:2px;
         }
 
         h4{
