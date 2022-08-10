@@ -1,6 +1,7 @@
 import {
     Container, Message, TextMessage,
-    IniciarProjeto, MessageData, ContainerMessage
+    IniciarProjeto, MessageData, ContainerMessage,
+    DivMessageButton
 
 } from "./styled"
 
@@ -11,10 +12,15 @@ import { Feste } from "../../services/fauna"
 import { useState } from "react"
 
 export function ContactMe(){
+    const [InputName, setInputName] = useState("")
+    const [InputEmail, setInputEmail] = useState("")
+    const [AreaTextMessage, setAreaTextMessage] = useState("")
 
-    const [InputValue, setInputValue] = useState("")
-
-    const contact = InputValue
+    const contact = {
+        Name:InputName,
+        Email: InputEmail,
+        Message: AreaTextMessage
+    }
 
     return( 
         <Container>
@@ -32,18 +38,26 @@ export function ContactMe(){
 
                 <Message>
                     <MessageData>
-                        <input type="text" value={InputValue}
+                        <input type="text" value={InputName}
                         placeholder="Nome"
-                        onChange={(e) => setInputValue(e.target.value)}
+                        onChange={(e) => setInputName(e.target.value)}
                         />
-                        <input type="text" value={InputValue}
+                        <input type="text" value={InputEmail}
                         placeholder="Email"
-                        onChange={(e) => setInputValue(e.target.value)}
+                        onChange={(e) => setInputEmail(e.target.value)}
                         />
 
-                        <textarea placeholder="Message"/>
+                        <textarea 
+                        value={AreaTextMessage}
+                        placeholder="Message"
+                        onChange={(e) => setAreaTextMessage(e.target.value)}
+                        />
 
-                        <button type="submit" onClick={() => Feste(contact, setInputValue)}>SUBMIT</button>
+                        <DivMessageButton>
+                            <button type="submit" onClick={() => Feste(contact, setInputName, setInputEmail, setAreaTextMessage)}>
+                                Enviar mensagem
+                            </button>
+                        </DivMessageButton>
                     </MessageData>
                 </Message>
             </ContainerMessage>

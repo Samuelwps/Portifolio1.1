@@ -4,7 +4,7 @@ export const Container = styled.div`
 
     max-width:1440px;
 
-    min-height: 20rem;
+    
 
     margin:0 auto;
 
@@ -15,7 +15,9 @@ export const Container = styled.div`
 
 export const ContainerMessage = styled.div`
     max-width: 1040px;
-    
+    min-height: 20rem;
+
+
     margin:0 auto;
 
     display:flex;
@@ -24,11 +26,18 @@ export const ContainerMessage = styled.div`
     align-items:center;
 
     padding:2rem;
+
+    @media screen and (max-width:940px){
+        flex-direction:column;
+        min-height: 25rem;
+    }
 `
 
 
 export const Message = styled.div`
     display:flex;   
+
+    margin:1rem;
 `
 
 
@@ -37,9 +46,9 @@ export const MessageData = styled.div`
     border-radius: 2px;
 
 
-    min-width:550px;
+    min-width:30rem;
 
-    min-height:500px;
+    min-height:30rem;
 
     padding:1.3rem;
 
@@ -53,31 +62,71 @@ export const MessageData = styled.div`
 
     input{
         width:100%;
-        padding:1.7rem;
+        
+        padding:1.2rem;
+
+        font-size: 1.2rem;
+
+        color:white;
 
         border-radius: 5px;
 
         border:none;
+        outline: none;
         background:var(--background);
+    }
+
+    input:focus{
+        border:1px solid var(--yellow-500);
     }
 
     textarea{
         width:100%;
         height:10rem;
 
-        padding:1rem;
+        color:white;
+
+        padding:1.2rem;
+
+        font-size: 1.3rem;
 
         border-radius: 5px;
         border:none;
         background:var(--background);
 
         resize:none;
+        outline:none;
+    }
+
+    textarea:focus{
+        border:1px solid var(--yellow-500);
     }
 `
 
+export const DivMessageButton = styled.div`
+    width: 100%;
+
+    display:flex;
+    justify-content:right;
+    align-items: right;
+
+    button{
+        color:white;
+        background:var(--yellow-500);
+        padding:0.7rem;
+        border:none;
+        border-radius: 2px;
+
+        letter-spacing: 1px;
+        font-size:1.2rem;
+        font-weight: 100;
+    }
+`
 
 export const TextMessage = styled.div`
     max-height: 15rem;
+
+    margin:1rem;
 
     display: flex;
     flex-direction: column;
