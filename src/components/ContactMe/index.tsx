@@ -42,7 +42,7 @@ export function ContactMe(){
                         placeholder="Nome"
                         onChange={(e) => setInputName(e.target.value)}
                         />
-                        <input type="text" value={InputEmail}
+                        <input type="email" value={InputEmail}
                         placeholder="Email"
                         onChange={(e) => setInputEmail(e.target.value)}
                         />

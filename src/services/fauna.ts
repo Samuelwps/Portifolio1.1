@@ -13,18 +13,23 @@ export async function Feste(
   setAreaTextMessage:React.Dispatch<React.SetStateAction<string>>
 )  
 {
-  try{
-    await fauna.query(
-      q.Create(
-        q.Collection("contact"),
-        {data : {contact}}
+  if(contact.Name === "" || contact.Email === ""|| contact.Message === ""){
+    alert("Complete todos os campos")
+    
+  } else{
+      try{
+      await fauna.query(
+        q.Create(
+          q.Collection("contact"),
+          {data : {contact}}
+        )
       )
-    )
-    setInputName("")
-    setInputEmail("")
-    setAreaTextMessage("")
-    return true
-  } catch {
-    return false 
+      setInputName("")
+      setInputEmail("")
+      setAreaTextMessage("")
+      return true
+    } catch {
+      return false 
+    }
   }
 }
