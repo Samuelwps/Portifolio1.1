@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa'
 
 export function AboutMe() {
   return (
-    <Container> 
+    <Container id="ABOUT"> 
       <Me>
           <p>hi i'm</p>
           <h1>SAMUEL RIBEIRO</h1>

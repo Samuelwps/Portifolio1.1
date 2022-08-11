@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export const SectionWorks = styled.section`
         padding-top: 5rem;
+        max-width:1440px;
         margin:0 auto;
         display:flex;
         justify-content: center;
@@ -32,7 +33,7 @@ export const DivTitle = styled.div`
 
         p{
                 text-align: center;
-                max-width:15rem;
+                max-width:40rem;
                 padding-top:3rem;
         }
 
@@ -86,7 +87,6 @@ export const Ullist = styled.ul`
         }
 `
 
-
 export const DivImage = styled.div`
         max-width:45rem;
         max-height:45rem;
@@ -99,16 +99,16 @@ export const DivImage = styled.div`
 `
 
 export const ProjectHeader = styled.div`    
+        width:100%;
         display:flex;
-        align-items: flex-start;
         flex-direction:column;
 `;
 
 export const ProjectContent = styled.div`
-
+        width:100%;
         margin:0 auto;
-
-        display: flex;
+        margin:1rem;
+        display: flex;  
         align-items:center;
         justify-content: center;
         flex-direction:column;
@@ -118,19 +118,18 @@ export const ProjectContent = styled.div`
                 text-align: left;
                 font-size:1.5rem;
         }
-        max-width:75rem;
         div{
-                margin:1rem;
-        p{
-                text-align: center;
-                font-size:1.2rem;
-        }}
+                p{
+                        text-align: center;
+                        font-size:1.2rem;
+                }
+        }
 `
 
 export const DivImageSummary = styled.div`
         margin:3rem;
-        max-width:65rem;
-        max-height:65rem;
+        width:100%;
+        
 
         img{
                 width:100%;
@@ -173,9 +172,7 @@ export const DivSummaryCategory = styled.div`
 
 export const DivImageSummaryCategory = styled.div`
 
-        max-width:75rem;
-        max-height:75rem;
-
+        width:100%;
         img{
                 width:100%;
                 height:100%;

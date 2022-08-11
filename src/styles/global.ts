@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
         --background:#0d0d0d;
         --background2:#242323;
+        --background-input:rgba(36, 35, 35, 0.3);
 
         --gitcolor:#0D1117;
         
@@ -64,6 +65,10 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+
+    html{
+        scroll-behavior: smooth;
+    }
 
     @media screen and (max-width:1080px){
         html{

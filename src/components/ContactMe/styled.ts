@@ -1,10 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-
     max-width:1440px;
-
-    
 
     margin:0 auto;
 
@@ -42,7 +39,7 @@ export const Message = styled.div`
 
 
 export const MessageData = styled.div`
-    background: rgba(36, 35, 35, 0.3);
+    background: var(--background-input);
     border-radius: 2px;
 
 

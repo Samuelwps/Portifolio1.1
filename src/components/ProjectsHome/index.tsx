@@ -5,7 +5,7 @@ import Arrow from "./../../images/chevrons-right.svg"
 
 export function Projects() {
     return(
-        <Container>
+        <Container id="WORKS">
             <DivForWorks>
                 <SelectedWorks>
                     <ProjectsWorks>

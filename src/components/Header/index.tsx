@@ -5,12 +5,12 @@ export function Header(){
     return(
         <Container>
             <Ullist>
-                <li><a href="home">HOME</a></li>
-                <li><a href="About">ABOUT</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#WORKS">WORKS</a></li>
             </Ullist>
             <Ullist>
-                <li><a href="Works">WORKS</a></li>
-                <li><a href="Resume">RESUME</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+                <li><a href="#RESUME">RESUME</a></li>
             </Ullist>
         </Container>
     );
