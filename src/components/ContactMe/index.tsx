@@ -23,7 +23,7 @@ export function ContactMe(){
     }
 
     return( 
-        <Container id="CONTACT">
+        <Container id="contact">
             <ContainerMessage>
                 <TextMessage>
                     <IniciarProjeto>

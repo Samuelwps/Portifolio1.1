@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa'
 
 export function AboutMe() {
   return (
-    <Container id="ABOUT"> 
+    <Container id="about"> 
       <Me>
           <p>hi i'm</p>
           <h1>SAMUEL RIBEIRO</h1>
@@ -19,7 +19,7 @@ export function AboutMe() {
         <h1>Expert on</h1>
         <p>Eu sou um desenvolvedor Front-End. 
           Com o objetivo de ser Full Stack, 
-          atualmete Desenvolvo aplicações web e mobile
+          atualmente desenvolvo aplicações web e mobile
           desde o layout até o código.
         </p>
       </About>         
