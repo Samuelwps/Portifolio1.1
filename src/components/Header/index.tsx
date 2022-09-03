@@ -1,17 +1,21 @@
-import {Container, Ullist} from "./styled"
+import {useState} from "react"
+import { HeaderMob } from "../HeaderMob";
+import { HeaderDesk } from "../HeaderDesk";
 
 
 export function Header(){
+    const [menuIsVisible, setIsMenuVisible] = useState(false)
+
     return(
-        <Container>
-            <Ullist>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#works">WORKS</a></li>
-            </Ullist>
-            <Ullist>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1b2ZqhIa0Fy1WXgugUwF9N3_3bDtKCpQz?usp=sharing">RESUME</a></li>
-            </Ullist>
-        </Container>
+        <>
+        <HeaderMob
+        menuIsVisible={menuIsVisible}
+        setIsMenuVisible={setIsMenuVisible}
+        />
+        <HeaderDesk
+        menuIsVisible={menuIsVisible}
+        setIsMenuVisible={setIsMenuVisible}
+        />
+        </>
     );
 }
