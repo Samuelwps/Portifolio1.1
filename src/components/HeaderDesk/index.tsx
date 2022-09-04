@@ -12,11 +12,11 @@ export function HeaderDesk({menuIsVisible, setIsMenuVisible}: HeaderMob){
         <Container>
             <div onClick={() => setIsMenuVisible(true)}>Menu <AiOutlineMenu className="Menu_icon"/></div>
             <Ullist id="nav">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#works">WORKS</a></li>
+                <li><a href="/#about">ABOUT</a></li>
+                <li><a href="/#works">WORKS</a></li>
             </Ullist>
             <Ullist id="nav">
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="/#contact">CONTACT</a></li>
                 <li><a href="https://drive.google.com/drive/folders/1b2ZqhIa0Fy1WXgugUwF9N3_3bDtKCpQz?usp=sharing">RESUME</a></li>
             </Ullist>
         </Container>

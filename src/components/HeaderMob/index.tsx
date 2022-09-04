@@ -8,7 +8,7 @@ interface HeaderMob {
 
 export function HeaderMob({menuIsVisible, setIsMenuVisible}: HeaderMob){
     return(
-        <Container isVisible={menuIsVisible}>
+        <Container isVisible={menuIsVisible} onClick={() => setIsMenuVisible(false)}>
             <IoClose size={45} onClick={() => setIsMenuVisible(false)} className="IoClose"/>
             <nav>
                 <a href="/#about" onClick={() => setIsMenuVisible(false)} >About</a>
