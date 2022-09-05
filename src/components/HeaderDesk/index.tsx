@@ -17,7 +17,7 @@ export function HeaderDesk({menuIsVisible, setIsMenuVisible}: HeaderMob){
             </Ullist>
             <Ullist id="nav">
                 <li><a href="/#contact">CONTACT</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1b2ZqhIa0Fy1WXgugUwF9N3_3bDtKCpQz?usp=sharing">RESUME</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1b2ZqhIa0Fy1WXgugUwF9N3_3bDtKCpQz?usp=sharing" target="_blank">RESUME</a></li>
             </Ullist>
         </Container>
         </>

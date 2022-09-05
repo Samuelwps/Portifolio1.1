@@ -62,15 +62,22 @@ export const ListItem = styled.div`
         align-items: center;
         justify-content:space-around;
 
-
-        &:first-child{@media screen and (max-width:1180px){
-                flex-direction: column-reverse;
-        }}
         @media screen and (max-width:1180px){
                 flex-direction: column;
         }
 
 `;
+
+export const ListItemReverse = styled.div`
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+
+        @media screen and (max-width:1180px){
+                flex-direction: column-reverse;
+        }
+`
 
 export const DivWorks = styled.div`
         max-width:20rem;

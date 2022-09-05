@@ -1,7 +1,12 @@
-import { ListItem, SelectedWorks, Container, Imgworks, DivWorks, DivForWorks, ProjectsWorks } from "./styled"
+import { 
+    ListItem, SelectedWorks, Container, 
+    Imgworks, DivWorks, DivForWorks, ProjectsWorks,
+    ListItemReverse
+    } from "./styled"
 import dtmoneyIcon from "./../../images/dtmoneyIcon.svg"
 import watchMe from "./../../images/watchMe.svg"
 import Arrow from "./../../images/chevrons-right.svg"
+import Todo from "./../../images/TodoIcon.svg"
 
 export function Projects() {
     return(
@@ -13,8 +18,8 @@ export function Projects() {
                         <h2>Projetos Concluídos</h2>
                     </ProjectsWorks>
                 </SelectedWorks>
-                <div>
-                    <ListItem>
+                <section>
+                    <ListItemReverse>
                         <DivWorks>
                             <div>
                                 <h1>01</h1>
@@ -32,7 +37,7 @@ export function Projects() {
                         <Imgworks>
                             <img src={dtmoneyIcon} alt="DT-Money"/>
                         </Imgworks>
-                    </ListItem>
+                    </ListItemReverse>
 
                     <ListItem>
                         <Imgworks>
@@ -51,7 +56,27 @@ export function Projects() {
                             </div>    
                         </DivWorks>
                     </ListItem>
-                </div> 
+
+                    <ListItemReverse>
+                        <DivWorks>
+                            <div>
+                                <h1>03</h1>
+                                <h4>To do</h4>
+                            </div>
+                            <p>
+                                Um dos meus primeiros projetos 
+                                como treinamento em desenvolvimento
+                                Front-End com rocketseat-education
+                            </p>
+                            <div className="Arrow">
+                                <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                            </div>    
+                        </DivWorks>
+                        <Imgworks>
+                            <img src={Todo} alt="DT-Money"/>
+                        </Imgworks>
+                    </ListItemReverse>
+                </section> 
             </DivForWorks>
         </Container>
     )
