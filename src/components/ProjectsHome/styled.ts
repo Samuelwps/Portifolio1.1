@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components";
 
 
 export const Container = styled.section`
@@ -18,6 +18,59 @@ export const DivForWorks = styled.div`
 
         border-top:1px solid var(--gray-800);
 `;
+
+export const ButtonAco = styled.button`
+        margin:0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Jura', sans-serif;
+        font-size:1.5rem;
+        border: 0;
+
+        cursor: pointer;
+        background-color: transparent;
+
+        padding: 8px 16px;
+        margin-top: 16px;
+
+        color:white;
+`
+
+export const Arrows = styled.div<ContentProps>`
+        ${({content}) => content && css`
+                transform: rotate(90deg);
+        `}
+        transition: 0.5s ease;
+`
+interface ContentProps{
+        content: boolean
+}
+
+export const ContentAco = styled.div<ContentProps>`
+        width: 0 auto;
+        opacity: 0;
+        transform: translateY(0px);
+        max-height: 0;
+        ${({content}) => content && css`
+        max-height: min-content;
+        transform: translateY(5px);
+        opacity: 1 ;
+        ;
+        `}
+
+        transition: .5s ease;
+
+        p{
+                text-align: center;
+        }
+`
+
+export const DivCSS = styled.div`
+        margin:1rem;
+        max-width:50rem;
+`
 
 export const SelectedWorks = styled.div`
         border-right: 1px solid var(--gray-800);
@@ -56,11 +109,11 @@ export const ProjectsWorks = styled.div`
 `;
 
 export const ListItem = styled.div`
-       
         margin:0 auto;
         display: flex;
         align-items: center;
         justify-content:space-around;
+        max-width:50rem;
 
         @media screen and (max-width:1180px){
                 flex-direction: column;
@@ -71,6 +124,7 @@ export const ListItem = styled.div`
 export const ListItemReverse = styled.div`
         margin:0 auto;
         display: flex;
+        max-width:50rem;
         align-items: center;
         justify-content:space-around;
 
@@ -97,6 +151,14 @@ export const DivWorks = styled.div`
                         font-size:4rem;
                         opacity:0.1;
                         padding-right:1rem;
+                }
+
+                h2{
+                        font-size:3rem;
+                }
+
+                h4{
+                        font-size:1.5rem;
                 }
         }
 

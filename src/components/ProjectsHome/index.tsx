@@ -1,14 +1,21 @@
 import { 
     ListItem, SelectedWorks, Container, 
     Imgworks, DivWorks, DivForWorks, ProjectsWorks,
-    ListItemReverse
+    ListItemReverse, ButtonAco, ContentAco,
+    DivCSS, Arrows
     } from "./styled"
 import dtmoneyIcon from "./../../images/dtmoneyIcon.svg"
 import watchMe from "./../../images/watchMe.svg"
 import Arrow from "./../../images/chevrons-right.svg"
 import Todo from "./../../images/TodoIcon.svg"
+import Menu from "./../../images/MenuIcon.svg"
+import { useState } from 'react';
 
 export function Projects() {
+
+    const [content, setContent] = useState(false)
+
+
     return(
         <Container id="works">
             <DivForWorks>
@@ -76,6 +83,31 @@ export function Projects() {
                             <img src={Todo} alt="DT-Money"/>
                         </Imgworks>
                     </ListItemReverse>
+
+                    <DivCSS>
+                    <ButtonAco onClick={() =>  content?(setContent(false)):(setContent(true))}>
+                        <Arrows content={content}>
+                            <a onClick={() =>  content?(setContent(false)):(setContent(true))}><img src={Arrow} alt="Arrow"/></a>
+                        </Arrows>    
+                        <h4>Conceitos com CSS</h4>
+                    </ButtonAco>
+                    <ContentAco content={content}>
+                        <ListItem>
+                        <Imgworks>
+                            <img src={Menu} alt="DT-Money"/>
+                        </Imgworks>
+                        <DivWorks>
+                            <div>    
+                                <h1>01</h1>
+                                <h2>Menu</h2>
+                            </div> 
+                            <div className="Arrow">
+                                <a href="https://menu-flutuante.netlify.app" target="_blank"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                            </div>    
+                        </DivWorks>
+                    </ListItem>
+                    </ContentAco>
+                    </DivCSS>
                 </section> 
             </DivForWorks>
         </Container>
