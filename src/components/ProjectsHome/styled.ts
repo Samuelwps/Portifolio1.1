@@ -53,9 +53,11 @@ export const ContentAco = styled.div<ContentProps>`
         opacity: 0;
         transform: translateY(0px);
         max-height: 0;
+        pointer-events: none;
         ${({content}) => content && css`
         max-height: min-content;
         transform: translateY(5px);
+        pointer-events: auto;
         opacity: 1 ;
         ;
         `}
