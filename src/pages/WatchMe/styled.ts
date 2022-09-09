@@ -9,10 +9,11 @@ export const SectionWorks = styled.section`
         justify-content: center;
         align-items: center;
         flex-direction:column;
+        font-size: 1.5rem;
 `; 
 
 export const DivContent = styled.div`
-        display:flex;;
+        display:flex;
         align-items:center;
         justify-content: center;
         margin:1.5rem;
@@ -23,7 +24,9 @@ export const DivContent = styled.div`
 `
 
 export const DivTitle = styled.div`
-        display:flex;;
+        max-width:400px;
+
+        display:flex;
         flex-direction: column;
         margin:3rem;
         justify-content: center;
@@ -60,10 +63,9 @@ export const Title = styled.div`
         }
 `;
 
-
 export const DivImage = styled.div`
-        max-width:45rem;
-        max-height:45rem;
+        max-width:35rem;
+        max-height:35rem;
         background:var(--background);
 
         img{
@@ -77,7 +79,6 @@ export const ProjectHeader = styled.div`
         display:flex;
         flex-direction:column;
 `;
-
 
 export const ButtonGit = styled.a`
         width:18rem;
@@ -108,7 +109,7 @@ export const Projectcontent = styled.div`
 `
 
 export const DivImageSidebar = styled.div`
-        max-width: 30rem;
+        max-width: 20rem;
 
         img{
                 width:100%;
@@ -157,7 +158,7 @@ export const ProjectContent =   styled.div`
 `
 
 export const DivImageContent = styled.div`
-        max-width: 50rem;
+        max-width: 35rem;
 
         img{
                 width:100%;

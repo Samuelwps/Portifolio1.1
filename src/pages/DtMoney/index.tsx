@@ -60,16 +60,16 @@ export function DtMoney() {
                     </div>
                 </DivSummaryCategory>
                 <DivSummaryCategory>
-                    <DivImageSummaryCategory>
+                    <DivImageSummary>
                         <img src={dtmoneyCategoryTransactions} alt="Transações"/>
-                    </DivImageSummaryCategory>
+                    </DivImageSummary>
                 </DivSummaryCategory>
                 <DivSummaryCategory>
                     <DivImageSummaryCategory>
                         <img src={dtmoneySummaryApi} alt="dtmoneyimageApi" />
                     </DivImageSummaryCategory>
                     <div>
-                        <p>Nesse pojeto também foi utilizado o MirajeJs para simular uma api, para que assim o Front-end fosse desenvolvido sem um back-end.</p>
+                        <p className="space">Nesse pojeto também foi utilizado o MirajeJs para simular uma api, para que assim o Front-end fosse desenvolvido sem um back-end.</p>
                     </div>
                 </DivSummaryCategory>
                 <DivSummaryCategory>
@@ -77,7 +77,7 @@ export function DtMoney() {
                         <img src={dtmoneySummaryModal} alt="dtmoneyimageApi" />
                     </DivImageSummaryCategory>
                     <div>
-                        <p>Com o react-modal é passado todos os valores e expecificações da transação e é criado uma nova transaction.</p>
+                        <p className="space">Com o react-modal é passado todos os valores e expecificações da transação e é criado uma nova transaction.</p>
                     </div>
                 </DivSummaryCategory>
                 <DivSummaryCategory>

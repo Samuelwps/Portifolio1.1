@@ -23,6 +23,8 @@ export const DivContent = styled.div`
 `
 
 export const DivTitle = styled.div`
+        max-width: 400px;
+
         display:flex;;
         flex-direction: column;
         margin:3rem;
@@ -88,8 +90,8 @@ export const Ullist = styled.ul`
 `
 
 export const DivImage = styled.div`
-        max-width:45rem;
-        max-height:45rem;
+        max-width:35rem;
+        max-height:35rem;
         background:var(--background);
 
         img{
@@ -128,7 +130,7 @@ export const ProjectContent = styled.div`
 
 export const DivImageSummary = styled.div`
         margin:3rem;
-        width:100%;
+        max-width: 50rem;
         
 
         img{
@@ -147,7 +149,6 @@ export const DivSummaryHeader = styled.div`
         }
 `
 
-
 export const DivSummaryCategory = styled.div`
         display:flex;
         align-items:center;
@@ -165,6 +166,7 @@ export const DivSummaryCategory = styled.div`
                 }
 
                 .space{
+                        max-width: 400px;
                         text-align:left;
                 }
         }
@@ -172,7 +174,7 @@ export const DivSummaryCategory = styled.div`
 
 export const DivImageSummaryCategory = styled.div`
 
-        width:100%;
+        max-width: 25rem;
         img{
                 width:100%;
                 height:100%;
