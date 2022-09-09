@@ -9,6 +9,7 @@ import watchMe from "./../../images/watchMe.svg"
 import Arrow from "./../../images/chevrons-right.svg"
 import Todo from "./../../images/TodoIcon.svg"
 import Menu from "./../../images/MenuIcon.svg"
+import IconRocketShoes from "./../../images/IconRocketShoes.svg"
 import { useState } from 'react';
 
 export function Projects() {
@@ -26,11 +27,12 @@ export function Projects() {
                     </ProjectsWorks>
                 </SelectedWorks>
                 <section>
+                    
                     <ListItemReverse>
                         <DivWorks>
                             <div>
                                 <h1>01</h1>
-                                <h4>DT-Money</h4>
+                                <h4>Cart</h4>
                             </div>
                             <p>
                                 Um dos meus primeiros projetos 
@@ -38,11 +40,11 @@ export function Projects() {
                                 Front-End com rocketseat-education
                             </p>
                             <div className="Arrow">
-                                <a href="/DtMoney"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                                <a href="/Cart"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
                             </div>    
                         </DivWorks>
                         <Imgworks>
-                            <img src={dtmoneyIcon} alt="DT-Money"/>
+                            <img src={IconRocketShoes} alt="DT-Money"/>
                         </Imgworks>
                     </ListItemReverse>
 
@@ -68,8 +70,31 @@ export function Projects() {
                         <DivWorks>
                             <div>
                                 <h1>03</h1>
-                                <h4>To do</h4>
+                                <h4>DT-Money</h4>
                             </div>
+                            <p>
+                                Um dos meus primeiros projetos 
+                                como treinamento em desenvolvimento
+                                Front-End com rocketseat-education
+                            </p>
+                            <div className="Arrow">
+                                <a href="/DtMoney"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                            </div>    
+                        </DivWorks>
+                        <Imgworks>
+                            <img src={dtmoneyIcon} alt="DT-Money"/>
+                        </Imgworks>
+                    </ListItemReverse>
+
+                    <ListItem>
+                        <Imgworks>
+                            <img src={Todo} alt="DT-Money"/>
+                        </Imgworks>
+                        <DivWorks>
+                            <div>    
+                                <h1>04</h1>
+                                <h4>To do</h4>
+                            </div> 
                             <p>
                                 Um dos meus primeiros projetos 
                                 como treinamento em desenvolvimento
@@ -79,10 +104,7 @@ export function Projects() {
                                 <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
                             </div>    
                         </DivWorks>
-                        <Imgworks>
-                            <img src={Todo} alt="DT-Money"/>
-                        </Imgworks>
-                    </ListItemReverse>
+                    </ListItem>
 
                     <DivCSS>
                     <ButtonAco onClick={() =>  content?(setContent(false)):(setContent(true))}>
@@ -108,6 +130,7 @@ export function Projects() {
                     </ListItem>
                     </ContentAco>
                     </DivCSS>
+
                 </section> 
             </DivForWorks>
         </Container>

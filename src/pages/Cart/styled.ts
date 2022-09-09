@@ -74,3 +74,75 @@ export const DivImage = styled.div`
                 height:100%;
         }
 `
+
+export const Projectcontent = styled.div`
+        width:100%;
+        margin:1.5rem;
+
+`
+
+export const DivSummaryCategory = styled.div`
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:100%;
+        div{
+                margin:1rem;
+                height:100%;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                p{
+                        text-align: center;
+                }
+
+                .space{
+                        max-width: 400px;
+                        text-align:left;
+                }
+        }
+`
+
+export const DivSummaryHeader = styled.div`
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        p{
+                text-align:center;
+        }
+`
+
+export const DivImageSummary = styled.div`
+        margin:3rem;
+        max-width: 50rem;
+        
+
+        img{
+                width:100%;
+                height:100%;
+        }
+`
+
+export const ButtonGit = styled.a`
+        width:18rem;
+
+        text-decoration:none;
+
+        margin:2rem;
+
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background: var(--gitcolor);
+        padding:1.3rem;
+        border-radius:15px;
+        border:none;
+        color:white;
+        font-size:1.5rem;
+
+        p{
+                font-weight:300;
+        }
+`

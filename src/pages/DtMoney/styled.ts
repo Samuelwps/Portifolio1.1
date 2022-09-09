@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 export const SectionWorks = styled.section`
         padding-top: 5rem;
         max-width:1440px;

@@ -121,7 +121,7 @@ export const DivProjectSideBar = styled.div`
         display:flex;
         align-items: center;
         justify-content: center;
-        justify-content: space-around;
+        justify-content: safe;
         margin:1.5rem;
         @media screen and (max-width:940px){
                 flex-direction: column-reverse;
@@ -131,6 +131,7 @@ export const DivProjectSideBar = styled.div`
 export const DivP = styled.div`
         display:flex;
         flex-direction: column;
+        margin:1rem;
 
         p{
                 max-width:30rem;
