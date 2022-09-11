@@ -19,7 +19,7 @@ export const Container = styled.section<VisibleMenuProps>`
     flex-direction:column;
     justify-content: center;
 
-    background: rgba(36, 35, 35, 0.1);
+    background: var(--background-input);
     backdrop-filter: blur(4px);
 
     opacity: 0;

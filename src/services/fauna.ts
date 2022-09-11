@@ -1,7 +1,9 @@
 import {Client} from "faunadb"
 
+import { toast } from 'react-toastify';
+
 export const fauna = new Client({
-  secret: process.env.REACT_APP_FAUNA_KEY,
+  secret: process.env.REACT_APP_FAUNA_KEY || "default-key",
 })
 
 import { query as q } from "faunadb"
@@ -14,7 +16,15 @@ export async function Feste(
 )  
 {
   if(contact.Name === "" || contact.Email === ""|| contact.Message === ""){
-    alert("Complete todos os campos")
+    if(contact.Name === ""){
+      toast.error("Escreva seu nome")
+    } 
+    if(contact.Email === ""){
+      toast.error("Escreva seu Email")
+    } 
+    if(contact.Message === ""){
+      toast.error("Escreva sua mensagem")
+    } 
     
   } else{
       try{
@@ -27,6 +37,7 @@ export async function Feste(
       setInputName("")
       setInputEmail("")
       setAreaTextMessage("")
+      toast.success("Mensagem enviada com sucesso")
       return true
     } catch {
       return false 

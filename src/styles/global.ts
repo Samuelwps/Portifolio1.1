@@ -39,6 +39,9 @@ export const GlobalStyle = createGlobalStyle`
 
         background-color:var(--gray-900);
 
+        text-rendering: optimizeLegibility !important;
+        -webkit-font-smoothing: antialiased;
+
         /* background-position: center;
 
         background-size: cover;

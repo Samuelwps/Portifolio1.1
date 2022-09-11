@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { HeaderMob } from './components/HeaderMob';
 import { GlobalStyle } from "./styles/global";
 import Rout from './routes';
+import { ToastContainer } from 'react-toastify';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Header/>
     <Rout/>
     <Footer/>
+    <ToastContainer/>
     <GlobalStyle/>
     </>
   );
