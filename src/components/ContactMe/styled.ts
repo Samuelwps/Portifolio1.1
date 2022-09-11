@@ -30,13 +30,11 @@ export const ContainerMessage = styled.div`
     }
 `
 
-
 export const Message = styled.div`
     display:flex;   
 
     margin:1rem;
 `
-
 
 export const MessageData = styled.div`
     background: var(--background-input);
@@ -109,6 +107,7 @@ export const DivMessageButton = styled.div`
 
     button{
         color:white;
+        cursor:pointer;
         background:var(--yellow-500);
         padding:0.7rem;
         border:none;

@@ -2,10 +2,7 @@ import {
     Container, Message, TextMessage,
     IniciarProjeto, MessageData, ContainerMessage,
     DivMessageButton
-
 } from "./styled"
-
-
 
 
 import { Feste } from "../../services/fauna"
