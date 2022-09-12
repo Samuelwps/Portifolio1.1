@@ -59,10 +59,9 @@ export const ContentAco = styled.div<ContentProps>`
         transform: translateY(5px);
         pointer-events: auto;
         opacity: 1 ;
+        transition: .5s ease;
         ;
         `}
-
-        transition: .5s ease;
 
         p{
                 text-align: center;

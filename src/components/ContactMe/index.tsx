@@ -32,7 +32,6 @@ export function ContactMe(){
                     <p>Conte-me sobre seu projeto<br/>Vou responder em breve</p>
                 </TextMessage>
 
-
                 <Message>
                     <MessageData>
                         <input type="text" value={InputName}

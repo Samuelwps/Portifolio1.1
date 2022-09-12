@@ -16,7 +16,6 @@ export function Projects() {
 
     const [content, setContent] = useState(false)
 
-
     return(
         <Container id="works">
             <DivForWorks>
