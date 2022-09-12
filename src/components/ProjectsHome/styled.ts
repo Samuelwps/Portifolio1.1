@@ -4,7 +4,6 @@ import styled, { css } from "styled-components";
 export const Container = styled.section`
         max-width:1440px;
         margin:0 auto;
-
 `; 
 
 export const DivForWorks = styled.div`
@@ -39,6 +38,13 @@ export const ButtonAco = styled.button`
 `
 
 export const Arrows = styled.div<ContentProps>`
+        max-width: 5rem;
+
+        img{
+                width:100%;
+                height:100%;
+        }
+        
         ${({content}) => content && css`
                 transform: rotate(90deg);
         `}
@@ -59,7 +65,7 @@ export const ContentAco = styled.div<ContentProps>`
         transform: translateY(5px);
         pointer-events: auto;
         opacity: 1 ;
-        transition: .5s ease;
+        transition: 1s ease;
         ;
         `}
 
@@ -200,8 +206,3 @@ export const Imgworks = styled.div`
                 height:100%;        
         }
 `;
-
-
-
-
-

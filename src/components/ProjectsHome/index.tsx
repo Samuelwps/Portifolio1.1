@@ -109,7 +109,7 @@ export function Projects() {
                     <ButtonAco onClick={() =>  content?(setContent(false)):(setContent(true))}>
                         <Arrows content={content}>
                             <a onClick={() =>  content?(setContent(false)):(setContent(true))}><img src={Arrow} alt="Arrow"/></a>
-                        </Arrows>    
+                        </Arrows>
                         <h4>Conceitos com CSS</h4>
                     </ButtonAco>
                     <ContentAco content={content}>
