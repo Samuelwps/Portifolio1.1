@@ -177,6 +177,7 @@ export const DivWorks = styled.div`
 
         .Arrow{
                 display:flex;
+                flex-direction: column;
 
                 a{
                         display:flex;
