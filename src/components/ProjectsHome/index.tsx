@@ -80,7 +80,6 @@ export function Projects() {
                             </p>
                             <div className="Arrow">
                                 <a href="/DtMoney"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
-                                <a href="https://carrinho-three.vercel.app" target="_blank">Deploy</a>
                             </div>    
                         </DivWorks>
                         <Imgworks>
@@ -90,7 +89,7 @@ export function Projects() {
 
                     <ListItem>
                         <Imgworks>
-                            <img src={Todo} alt="DT-Money"/>
+                            <img src={Todo} alt="Todo-list-image"/>
                         </Imgworks>
                         <DivWorks>
                             <div>    
@@ -103,8 +102,7 @@ export function Projects() {
                                 Front-End com rocketseat-education
                             </p>
                             <div className="Arrow">
-                                <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
-                                <a href="https://carrinho-three.vercel.app" target="_blank">Deploy</a>
+                                <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank">Deploy</a>
                             </div>    
                         </DivWorks>
                     </ListItem>
@@ -127,7 +125,7 @@ export function Projects() {
                                 <h2>Menu</h2>
                             </div> 
                             <div className="Arrow">
-                                <a href="https://menu-flutuante.netlify.app" target="_blank"><img src={Arrow} alt="Arrow"/>Visualizar projeto</a>
+                                <a href="https://menu-flutuante.netlify.app" target="_blank">Deploy</a>
                             </div>    
                         </DivWorks>
                     </ListItem>
